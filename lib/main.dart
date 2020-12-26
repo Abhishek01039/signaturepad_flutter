@@ -38,7 +38,7 @@ class _MyHomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Container(
                 child: SfSignaturePad(
                   key: signatureGlobalKey,
@@ -54,10 +54,10 @@ class _MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Center(
               child: TextButton(
-                child: Text('Clear'),
+                child: const Text('Clear'),
                 onPressed: _handleClearButtonPressed,
               ),
             )
