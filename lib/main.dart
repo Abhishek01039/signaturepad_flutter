@@ -15,17 +15,13 @@ class _MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tritonetech SignaturePad',
-      home: _MyHomePage(
-        title: 'Tritonetech SignaturePad',
-      ),
+      home: _MyHomePage(),
     );
   }
 }
 
 class _MyHomePage extends StatelessWidget {
-  _MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
+  _MyHomePage({Key key}) : super(key: key);
 
   final GlobalKey<SfSignaturePadState> signatureGlobalKey = GlobalKey();
 
